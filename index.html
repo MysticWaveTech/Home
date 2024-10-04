@@ -1,0 +1,162 @@
+/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polygon Clip-Path Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 0, 0, 0.8), 
+        rgba(255, 165, 0, 0.7), 
+        rgba(255, 255, 0, 0.6), 
+        rgba(0, 255, 0, 0.5), 
+        rgba(0, 255, 255, 0.4), 
+        rgba(0, 0, 255, 0.3), 
+        rgba(75, 0, 130, 0.2), 
+        rgba(148, 0, 211, 0.1)
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 300px;
+            position: absolute;
+        }
+
+        .polygon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .polygon1 {
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+            background-color: #3498db;
+        }
+
+        .polygon2 {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            background-color: #e74c3c;
+        }
+
+        .polygon3 {
+            clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+            background-color: #2ecc71;
+        }
+
+        .polygon:hover {
+            opacity: 0.8;
+        }
+
+        /* Additional polygons */
+        .polygon4 { clip-path: polygon(0 0, 100% 0, 0 100%); background-color: #9b59b6; }
+        .polygon5 { clip-path: polygon(0 0, 100% 50%, 0 100%); background-color: #f1c40f; }
+        .polygon6 { clip-path: polygon(100% 0, 100% 100%, 0 50%); background-color: #e67e22; }
+        .polygon7 { clip-path: polygon(50% 0, 100% 100%, 0% 100%); background-color: #1abc9c; }
+        .polygon8 { clip-path: polygon(0 100%, 50% 50%, 0 0); background-color: #2980b9; }
+        .polygon9 { clip-path: polygon(100% 100%, 50% 50%, 100% 0); background-color: #d35400; }
+        .polygon10 { clip-path: polygon(0 0, 50% 0, 0 50%); background-color: #8e44ad; }
+        .polygon11 { clip-path: polygon(100% 0, 100% 50%, 50% 0); background-color: #c0392b; }
+        .polygon12 { clip-path: polygon(50% 0, 100% 100%, 0% 100%); background-color: #34495e; }
+        .polygon13 { clip-path: polygon(0% 0%, 100% 100%, 0% 100%); background-color: #16a085; }
+        .polygon14 { clip-path: polygon(0 100%, 50% 50%, 0 0); background-color: #f39c12; }
+        .polygon15 { clip-path: polygon(100% 100%, 50% 50%, 100% 0); background-color: #c0392b; }
+        .polygon16 { clip-path: polygon(0 0, 50% 0, 100% 100%); background-color: #e74c3c; }
+        .polygon17 { clip-path: polygon(100% 0, 100% 100%, 0 50%); background-color: #2980b9; }
+        .polygon18 { clip-path: polygon(50% 0, 100% 100%, 0% 100%); background-color: #8e44ad; }
+        .polygon19 { clip-path: polygon(0 100%, 100% 100%, 0 0); background-color: #f1c40f; }
+        .polygon20 { clip-path: polygon(0 0, 100% 0, 100% 100%); background-color: #2ecc71; }
+        .polygon21 { clip-path: polygon(0 0, 50% 0, 100% 100%); background-color: #3498db; }
+        .polygon22 { clip-path: polygon(100% 0, 100% 100%, 0 50%); background-color: #d35400; }
+        .polygon23 { clip-path: polygon(50% 0, 100% 100%, 0% 100%); background-color: #9b59b6; }
+        .polygon24 { clip-path: polygon(0 100%, 50% 50%, 0 0); background-color: #f39c12; }
+        .polygon25 { clip-path: polygon(0 0, 50% 0, 0 50%); background-color: #34495e; }
+    </style>
+</head>
+<body>
+    
+    
+    
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/MysticWaveTech/Home/refs/heads/main/chinese-23964_1280.webp" style="width: 400px;">
+        <h1>Here are three links to three of our conventions.</h1>
+        
+        <div class="polygon polygon1">
+            <a href="https://mysticwavetech.github.io/ParapsychiatricCurriculumConvention/" target="_blank">Link 1</a>
+        </div>
+        <div class="polygon polygon2">
+            <a href="https://mysticwavetech.github.io/PhenomenologicalBracketing/index.html" target="_blank">Link 2</a>
+        </div>
+        <div class="polygon polygon3">
+            <a href="https://mysticwavetech.github.io/QuantumStemCellLightBodyConvention/" target="_blank">Link 3</a>
+        </div>
+    </div>
+    
+    <div style="clear: both"></div>
+    
+     <div class="polygon polygon4"></div>
+        <div class="polygon polygon5"></div>
+        <div class="polygon polygon6"></div>
+        <div class="polygon polygon7"></div>
+        <div class="polygon polygon8"></div>
+        <div class="polygon polygon9"></div>
+        <div class="polygon polygon10"></div>
+        <div class="polygon polygon11"></div>
+        <div class="polygon polygon12"></div>
+        <div class="polygon polygon13"></div>
+        <div class="polygon polygon14"></div>
+        <div class="polygon polygon15"></div>
+        <div class="polygon polygon16"></div>
+        <div class="polygon polygon17"></div>
+        <div class="polygon polygon18"></div>
+        <div class="polygon polygon19"></div>
+        <div class="polygon polygon20"></div>
+        <div class="polygon polygon21"></div>
+        <div class="polygon polygon22"></div>
+        <div class="polygon polygon23"></div>
+        <div class="polygon polygon24"></div>
+        <div class="polygon polygon25"></div>
+    
+    
+</body>
+</html>
