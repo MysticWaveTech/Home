@@ -237,8 +237,70 @@ a{
   <source src="https://raw.githubusercontent.com/MysticWaveTech/Home/refs/heads/main/Gen-3 Alpha Turbo 800815235, Through the tunnel s, Cropped - 1725706694, M 5.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>-->
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<style>
+    /* General div style with zombie font */
+.psyops-div {
+    font-family: 'Creepster', sans-serif; /* Apply the zombie font */
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+    margin-top: 70%;
+    width: 100%;
+    max-width: 1000px;
+    z-index: -1;
+}
 
-      
+/* Hover effect on div */
+.psyops-div:hover {
+    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+}
+
+/* Psyops styled link */
+.psyops-link {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.psyops-link:hover {
+    color: #ffffff;
+}
+
+/* Animated underline effect */
+.psyops-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+    left: 0;
+    bottom: -2px;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.psyops-link:hover::after {
+    transform: scaleX(1);
+}
+</style>
+
+   <div class="psyops-div">
+    <h2>PsyOps</h2>
+    <p><a href="Psyops.html"  target="_blank" class="psyops-link">Scientific</a>
+        <a href="psyops.pdf" target="_blank" class="psyops-link">More</a>
+    </p>
+</div>
 
     
 </body>
